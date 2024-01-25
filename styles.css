@@ -87,21 +87,18 @@ main {
   height: auto;
   background-color: var(--white);
 }
-
-.cards-container .individual-cards .card1 {
-  width: 19.75rem;
-  height: 18rem;
-  flex-shrink: 0;
-  border-radius: 1rem;
-  background: url("./assets/Rectangle 3.png"), lightgray 50% / cover no-repeat,
-    #d9d9d9;
+.cards-container {
+  display: flex; /* Add this line */
+  flex-wrap: wrap; /* Optional: Wrap the cards if they exceed the container width */
+  justify-content: space-between; /* Optional: Adjust the space between cards */
 }
 
-.cards-container .individual-cards .card2 {
+.cards-container .individual-cards img {
   width: 19.75rem;
   height: 18rem;
   flex-shrink: 0;
   border-radius: 1rem;
-  background: url("./assets/Rectangle\ 4.png"), lightgray 50% / cover no-repeat,
-    #d9d9d9;
+}
+.card1 .card2 .card3 .card4 .card5 .card6 {
+  flex-shrink: 0;
 }
