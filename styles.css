@@ -1,0 +1,33 @@
+/*
+*******Convención usada para elaborar estilos****************
+1.- Posicionamiento
+2.- Modelo de caja(Box model)
+3.- Tipografia
+4.- Visuales
+5.-Otros
+*/
+
+:root {
+  --light-grey: rgba(217, 217, 217, 1);
+  --dark-black: rgba(37, 37, 37, 1);
+
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: var(--white);
+}
