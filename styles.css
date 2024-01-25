@@ -10,7 +10,7 @@
 :root {
   --light-grey: rgba(217, 217, 217, 1);
   --dark-black: rgba(37, 37, 37, 1);
-
+  --medium-black: rgba(37, 37, 37, 0.8);
   --white: #fff;
 }
 * {
