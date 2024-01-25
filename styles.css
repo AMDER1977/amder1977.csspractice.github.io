@@ -21,7 +21,15 @@
 html {
   font-size: 62.5%;
 }
-
+body {
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: var(--white);
+}
 header {
   position: relative;
   display: flex;
@@ -38,9 +46,44 @@ header {
   height: 9.0625rem;
   color: #252525;
   text-align: center;
-  font-family: Avenir;
+  font-family: "Avenir", sans-serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 800;
   line-height: 5rem; /* 125% */
+}
+
+.text-container p {
+  width: 37.9375rem;
+  color: var(--medium-black);
+  text-align: center;
+  font-family: "Avenir", sans-serif;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button-container {
+  display: flex;
+  padding: 1.125rem 3rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  background: var(--dark-black);
+}
+
+.button-container button {
+  color: var(--white);
+  font-family: "Avenir", sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.cards-container .individual-cards {
+  width: 19.75rem;
+  height: 18rem;
+  flex-shrink: 0;
 }
