@@ -22,12 +22,25 @@ html {
   font-size: 62.5%;
 }
 
-body {
+header {
+  position: relative;
   display: flex;
-  padding: 4rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  background: var(--white);
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+}
+.title-container h1 {
+  width: 38.125rem;
+  height: 9.0625rem;
+  color: #252525;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 5rem; /* 125% */
 }
