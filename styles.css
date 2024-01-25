@@ -51,6 +51,7 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: 5rem; /* 125% */
+  margin-bottom: 2rem;
 }
 
 .text-container p {
@@ -62,6 +63,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 2rem;
 }
 
 .button-container {
@@ -80,6 +82,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 1.125rem;
+  background-color: var(--dark-black);
 }
 main {
   width: 100%;
@@ -88,9 +91,9 @@ main {
   background-color: var(--white);
 }
 .cards-container {
-  display: flex; /* Add this line */
-  flex-wrap: wrap; /* Optional: Wrap the cards if they exceed the container width */
-  justify-content: space-between; /* Optional: Adjust the space between cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cards-container .individual-cards img {
@@ -98,6 +101,7 @@ main {
   height: 18rem;
   flex-shrink: 0;
   border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 .card1 .card2 .card3 .card4 .card5 .card6 {
   flex-shrink: 0;
