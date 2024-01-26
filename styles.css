@@ -275,66 +275,66 @@ main {
     height: 100vh;
     margin:0
 } */
-}
 
-.principal-header {
-  flex-direction: column;
-}
-
-.left-container,
-.right-container {
-  width: 100%;
-  border: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1;
-}
-
-.left-container {
-  margin: 1rem;
-  font-size: 1.6rem;
-  max-width: 100%;
-}
-.left-container p {
-  margin: 1rem;
-  font-size: 1.4rem;
-  max-width: 50%;
-  margin: auto;
-}
-
-.rigth-container {
-  margin-top: 20px;
-  text-align: center;
-  margin: auto;
-}
-
-.rigth-container-left,
-.rigth-container-right {
-  flex-direction: column;
-}
-
-.rigth-container-left div,
-.rigth-container-right div {
-  margin-bottom: 20px;
-}
-
-.rigth-container-left figure img,
-.rigth-container-right figure img {
-  float: none;
-  margin-right: 0;
-  margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 767px) {
-  .principal-body {
+  .principal-header {
     flex-direction: column;
   }
 
-  .principal-body div {
-    width: 100%; /* O ajusta según tus necesidades */
+  .left-container,
+  .right-container {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+  }
+
+  .left-container {
+    margin: 1rem;
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+  .left-container p {
+    margin: 1rem;
+    font-size: 1.4rem;
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .rigth-container {
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .rigth-container-left,
+  .rigth-container-right {
+    flex-direction: column;
+  }
+
+  .rigth-container-left div,
+  .rigth-container-right div {
+    margin-bottom: 20px;
+  }
+
+  .rigth-container-left figure img,
+  .rigth-container-right figure img {
+    float: none;
     margin-right: 0;
-    margin-bottom: 1rem; /* Añadido para dar espacio entre las figuras en pantalla pequeña */
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .principal-body {
+      flex-direction: column;
+    }
+
+    .principal-body div {
+      width: 100%; /* O ajusta según tus necesidades */
+      margin-right: 0;
+      margin-bottom: 1rem; /* Añadido para dar espacio entre las figuras en pantalla pequeña */
+    }
   }
 }
