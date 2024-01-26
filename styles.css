@@ -147,8 +147,8 @@ main {
 
 .left-container {
   flex: 1;
-  padding: 10px;
-  border-right: 1px solid #ccc;
+  padding: 1rem;
+  border-right: 0.1rem solid #ccc;
 }
 
 .rigth-container {
@@ -167,21 +167,21 @@ main {
   flex-direction: column;
 }
 .left-container h1 span {
-  margin: 10px;
-  margin-top: 10px;
-  font-size: 50px;
+  margin: 1rem;
+  margin-top: 1rem;
+  font-size: 5rem;
 }
 /*párrafo en left-container*/
 .left-container p {
-  margin: 10px;
-  margin-top: 10px;
-  font-size: 16px;
+  margin: 1rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
 }
 
 /* div de  rigth-container */
 .rigth-container-left div,
 .rigth-container-right div {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .rigth-container-left h2,
@@ -192,25 +192,25 @@ main {
 .rigth-container-left div:first-child h2,
 .rigth-container-right div:first-child h2 {
   clear: none;
-  margin-left: 60px;
+  margin-left: 6rem;
 }
 
 .rigth-container-left figure img,
 .rigth-container-right figure img {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   background-color: #ccc;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   float: left;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 .button-getStarted button {
-  width: 150px;
-  height: 42px;
-  margin-top: 10px;
+  width: 15rem;
+  height: 4.2rem;
+  margin-top: 1rem;
   color: var(--white);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   font-size: small;
   outline: none;
   background-color: var(--dark-black);
@@ -218,30 +218,30 @@ main {
 
 .rigth-container-left,
 .rigth-container-right {
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
 .principal-body {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .principal-body div {
   position: relative;
-  width: 280px;
-  height: 300px;
+  width: 28rem;
+  height: 30rem;
 }
 
 .principal-body div:last-child {
   margin-right: 0;
 }
 .principal-body .figure1-container figure img {
-  border-radius: 20px 0 0 20px;
+  border-radius: 2rem 0 0 2rem;
 }
 .principal-body .figure4-container figure img {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 2rem 2rem 0;
 }
 
 .principal-body figure {
@@ -252,8 +252,8 @@ main {
 .principal-body figcaption {
   position: absolute;
   bottom: 0;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 1.4rem;
+  padding: 1rem;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -270,16 +270,21 @@ main {
 @media (max-width: 768px) {
   .principal-header {
     flex-direction: column;
+    flex: 1;
   }
 
   .left-container,
   .rigth-container {
-    width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+    width: 100%;
     border: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   .left-container {
-    border-bottom: 1px solid #ccc; /* Añade borde inferior en pantallas más pequeñas */
+    border-right: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .rigth-container {
@@ -288,18 +293,18 @@ main {
 
   .rigth-container-left,
   .rigth-container-right {
-    flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
+    flex-direction: column;
   }
 
   .rigth-container-left div,
   .rigth-container-right div {
-    margin-bottom: 20px; /* Ajusta el espacio entre los elementos en disposición de columna */
+    margin-bottom: 20px;
   }
 
   .rigth-container-left figure img,
   .rigth-container-right figure img {
-    float: none; /* Elimina el float para centrar las imágenes en pantallas más pequeñas */
+    float: none;
     margin-right: 0;
-    margin-bottom: 10px; /* Añade espacio entre las imágenes y los textos en pantallas más pequeñas */
+    margin-bottom: 1rem;
   }
 }
