@@ -13,11 +13,11 @@
   --medium-black: rgba(37, 37, 37, 0.8);
   --white: #fff;
 }
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+}
 html {
   font-size: 62.5%;
 }
@@ -139,3 +139,85 @@ main {
 }
 
 /*2DA LANDING*/
+/* Estilos generales */
+.principal-header {
+  display: flex;
+  margin: 0px;
+}
+
+.left-container {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.rigth-container {
+  flex: 1;
+  display: flex;
+}
+
+.rigth-container-left,
+.rigth-container-right {
+  flex: 1;
+}
+
+/* Título  */
+.left-container h1 {
+  display: flex;
+  flex-direction: column;
+}
+.left-container h1 span {
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 50px;
+}
+/*párrafo en left-container*/
+.left-container p {
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* div de  rigth-container */
+.rigth-container-left div,
+.rigth-container-right div {
+  margin-bottom: 40px;
+}
+
+.rigth-container-left h2,
+.rigth-container-right h2 {
+  margin: 0;
+}
+
+.rigth-container-left div:first-child h2,
+.rigth-container-right div:first-child h2 {
+  clear: none;
+  margin-left: 60px;
+}
+
+.rigth-container-left figure img,
+.rigth-container-right figure img {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  margin-right: 8px;
+  float: left;
+  border-radius: 8px;
+}
+
+.button-getStarted button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  color: var(--white);
+  border-radius: 18px;
+  font-size: small;
+  outline: none;
+  background-color: var(--dark-black);
+}
+
+.rigth-container-left,
+.rigth-container-right {
+  padding: 10px;
+  box-sizing: border-box;
+}
